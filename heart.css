@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container .heart {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background: rgb(236, 30, 99);
+    transform: rotate(45deg);
+}
+
+.container .heart::before{
+    content: "";
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: rgb(236, 30, 99);
+    position: absolute;
+    transform: translateX(-50%);
+}
+.container .heart::after {
+    content: "";
+    width: 200px;
+    height: 200px;
+    background: rgb(236, 30, 99);
+    border-radius: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+}
